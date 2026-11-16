@@ -10,7 +10,7 @@ No presentations have been published yet.
 
 <!-- Add a row below for each published deck and remove the message above. -->
 | Presentation | Date | Slides |
-| --- | --- | --- |
+| RiskReunion | 17/11/26 | [View slides](https://chapuisk.github.io/Presentations/SEASOI_171126/) |
 
 ## Add a presentation
 
