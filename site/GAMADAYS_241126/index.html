@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Presentation</title>
+
+  <link rel="stylesheet" href="assets/vendor/reveal.js/dist/reveal.css" />
+  <link rel="stylesheet" href="assets/vendor/reveal.js/dist/theme/simple.css" id="theme" />
+  <link rel="stylesheet" href="assets/vendor/highlight.js/github.min.css" />
+
+  <link rel="stylesheet" href="assets/css/deck.css" />
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section id="title-slide">
+        <div class="deck-layout-001">
+          <div class="deck-layout-002 section-label">
+            <a href="assets/img/logo/GD26Logo.png"><img class="deck-layout-003" src="assets/img/logo/GD26Logo.png" alt="GAMA Days 2026"></a>
+          </div>
+          <h1 class="deck-layout-004">From simulation to situated experience: coupling GAMA and unity for immersive tsunami risk awareness in Mayotte</h1>
+          <p class="deck-layout-005">M. Corrigou, <span class="note">K. Chapuis</span>, N. Carles, M. Gherardi and F. Leone</p>
+          <p class="deck-layout-006"><a href="mailto:kevin.chapuis@ird.fr">kevin.chapuis@ird.fr</a> · <a href="https://github.com/chapuisk">@chapuisk</a></p>
+          <div class="deck-layout-007">
+            <a href="assets/img/logo/Logo_IRD_SansBaseline_Coul.svg"><img class="deck-layout-008" src="assets/img/logo/Logo_IRD_SansBaseline_Coul.svg" alt="IRD"></a>
+            <a href="assets/img/logo/logo_espace_dev.jpeg"><img class="deck-layout-009" src="assets/img/logo/logo_espace_dev.jpeg" alt="EspaceDEV"></a>
+            <a href="assets/img/logo/Lagam.png"><img class="deck-layout-010" src="assets/img/logo/Lagam.png" alt="LAGAM"></a>
+          </div>
+        </div>
+      <!-- 
+      <div class="deck-layout-011 slide-footer"><a href="assets/img/logo/GD26Logo.png"><img src="assets/img/logo/GD26Logo.png" alt=""></a><i>Tsunami VR serious game - Corrigou et al.</i><span class="deck-layout-012">Built with <a href="https://revealjs.com/" target="_blank" rel="noopener">Reveal.js</a> · <a href="https://github.com/Data-Wise/dtslides" target="_blank" rel="noopener">dtslides</a> · <a href="https://github.com/features/copilot" target="_blank" rel="noopener">GitHub Copilot</a></span></div>
+      -->
+      </section>
+
+    <section>
+      <section class="section-slide has-slide-footer">
+        <div class="slide-frame">
+          <div class="slide-content">
+            <h1>Context of the serious game</h1>
+          </div>
+          <footer class="slide-footer">
+            <a href="assets/img/logo/GD26Logo.png"><img class="deck-layout-003" src="assets/img/logo/GD26Logo.png" alt="GAMA Days 2026"></a>
+            <i>From simulation to situated experience: coupling GAMA and unity for immersive tsunami risk awareness in Mayotte - Corrigou et al., 2026</i>
+          </footer>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="deck-layout-013">Tsunami follow the HILP principle</h2>
+        <div class="deck-layout-014">
+          <div class="deck-layout-015">
+            <div class="deck-layout-016 card">
+              <div class="deck-layout-017">1979</div>
+              <div class="deck-layout-018">A landslide-generated tsunami reached Nice Airport</div>
+            </div>
+            <div class="deck-layout-019 card">
+              <div class="deck-layout-020">2004</div>
+              <div class="deck-layout-018">Indian Ocean earthquake-triggered tsunami · more than 200,000 deaths</div>
+              <p class="deck-layout-021 citation">BRGM · Lay et al. (2005)</p>
+            </div>
+            <div class="deck-layout-022 card">
+              <div class="deck-layout-023">Somewhere in the future</div>
+              <div class="deck-layout-018">Piton 200 · a local tsunami leaves 10 to 20min to respond</div>
+            </div>
+          </div>
+          <div class="deck-layout-024">
+            <a href="assets/img/sce-piton200.gif"><img class="deck-layout-025" src="assets/img/sce-piton200.gif" alt="Animated Piton 200 tsunami scenario"></a>
+          </div>
+        </div>
+        <div class="deck-layout-026 fragment fade-in" data-fragment-index="0">
+          <a class="deck-layout-027" href="assets/img/phaseTsuna.png">
+            <img class="deck-layout-028" src="assets/img/phaseTsuna.png" alt="Tsunami alert phases">
+          </a>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="deck-layout-029">From the Mediterranean ABM to Mayotte Tsunami risk</h2>
+        <div class="deck-layout-030">
+          <div class="deck-layout-031">
+            <a href="assets/img/TsunaSim.png"><img class="deck-layout-032" src="assets/img/TsunaSim.png" alt="GAMA simulation of tsunami evacuation in Mamoudzou"></a>
+          </div>
+          <div class="deck-layout-015">
+            <div class="deck-layout-033 card">
+              <div class="deck-layout-034"><b>Mayotte model refinements</b></div>
+              <div class="deck-layout-035 small">3D pedestrian evacuation · finer agent distribution · more social interaction</div>
+            </div>
+            <div class="deck-layout-036 card">
+              <div class="deck-layout-034"><b>Dummy agents</b></div>
+              <div class="deck-layout-035 small">Probabilistic milling time · limited social behaviour · perfect knowledge</div>
+            </div>
+          </div>
+        </div>
+      </section>
+</section>
+
+<section>
+      <section class="section-slide has-slide-footer">
+        <div class="slide-frame">
+          <div class="slide-content">
+            <h1>Turning an ABM into a VR serious game</h1>
+            <!--
+            <p class="deck-layout-037">How and why we turn the ABM tsunami evacuation model into a serious game: from theoretical to practical consideration</p>
+            -->
+          </div>
+          <footer class="slide-footer">
+            <a href="assets/img/logo/GD26Logo.png"><img class="deck-layout-003" src="assets/img/logo/GD26Logo.png" alt="GAMA Days 2026"></a>
+            <i>From simulation to situated experience: coupling GAMA and unity for immersive tsunami risk awareness in Mayotte - Corrigou et al., 2026</i>
+          </footer>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="deck-layout-029">One model, three ways to engage</h2>
+        <div class="deck-layout-038">
+          <div class="deck-layout-039 card">
+            <h3 class="deck-layout-040">ABM Simulation</h3>
+            <a href="assets/img/TsunaSim.png" target="_blank" rel="noopener"><img class="deck-layout-041" src="assets/img/TsunaSim.png" alt="Framed GAMA simulation view"></a>
+            <div class="deck-layout-042 small">Degradated alert system have non linear consequences on the gradual rollout of the roads and time of exposure</div>
+          </div>
+          <div class="deck-layout-043 card">
+            <h3 class="deck-layout-040">TsunaWAVE dashboard</h3>
+            <a href="https://geodata.univ-montp3.fr/web-app/irima-mayotte/" target="_blank" rel="noopener"><img class="deck-layout-041" src="assets/img/TsunaWAVE_vignet.png" alt="Open the TsunaWAVE dashboard"></a>
+            <div class="deck-layout-042 small">Centralize thematic and multi-paradigm modeling perspectives on the Tsunami risk in Mayotte</div>
+          </div>
+          <div class="deck-layout-044 card">
+            <h3 class="deck-layout-040">VR serious game</h3>
+            <a href="https://github.com/ojemaje/tsunami-evacuation-vr-platform/tree/main" target="_blank" rel="noopener"><img class="deck-layout-041" src="assets/img/GhSnap.png" alt="Open the VR serious game repository on GitHub"></a>
+            <div class="deck-layout-042 small">A classroom experience to raise awarness and engage institutional with citizens in Tsunami readiness</div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="deck-layout-029">Awareness through engagement</h2>
+        <div class="deck-layout-045">
+          <div class="deck-layout-046 card">
+            <div class="deck-layout-002 section-label">Purpose</div>
+            <div class="deck-layout-047">Fun and engagement<br>are goals in themselves</div>
+            <p class="small">Bring scientific reflection into the classroom</p>
+          </div>
+          <div class="deck-layout-048 card">
+            <div class="deck-layout-049 section-label">Audience</div>
+            <div class="deck-layout-047">Young people<br>around age 11</div>
+            <p class="small">Learners who can carry what they learn to family and friends</p>
+          </div>
+          <div class="deck-layout-050 card">
+            <div class="deck-layout-051 section-label">Awareness</div>
+            <div class="deck-layout-052">Recognize signs<br>and safe places</div>
+            <p class="small">Practice early response and avoid counter-effective evacuation behaviour</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="deck-layout-029">Game rules and design carry the message</h2>
+        <div class="deck-layout-053">
+          <div class="deck-layout-054 card">
+            <div class="deck-layout-002 section-label">Rational Game Design</div>
+            <div class="deck-layout-055">A structured process</div>
+            <div class="deck-layout-035 small">Atomic mechanics · declination table · variation matrices</div>
+            <a href="assets/img/VarMat.png"><img class="deck-layout-056" src="assets/img/VarMat.png" alt="Game variation matrix"></a>
+          </div>
+          
+          <div class="deck-layout-057 card">
+            <div class="deck-layout-049 section-label">Procedural rhetoric <span class="deck-layout-058 citation">Bogost (2007)</span></div>
+            <div class="deck-layout-055">Meaning through consequences</div>
+            <div class="deck-layout-035 small">Players learn through the effects of the rules, rather than only through text or images</div>
+            
+          </div>
+        </div>
+      </section>
+  </section>
+
+  <section>
+      <section class="section-slide has-slide-footer">
+        <div class="slide-frame">
+          <div class="slide-content">
+            <h1>The serious game and future prospects</h1>
+          </div>
+          <footer class="slide-footer">
+            <a href="assets/img/logo/GD26Logo.png"><img class="deck-layout-003" src="assets/img/logo/GD26Logo.png" alt="GAMA Days 2026"></a>
+            <i>From simulation to situated experience: coupling GAMA and unity for immersive tsunami risk awareness in Mayotte - Corrigou et al., 2026</i>
+          </footer>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="deck-layout-029">Two game phases, different implications for the ABM simulation</h2>
+        <div class="deck-layout-059">
+          <div class="deck-layout-060 card">
+            <h3 class="deck-layout-061">Phase 1 · upward alert</h3>
+            <div class="deck-layout-062 small">Players interpret early signs such as receding water or birds erratic behavior</div>
+            <div class="deck-layout-063">
+              <div class="deck-layout-064">
+                <div class="deck-layout-065">
+                  <b>ABM Simulation</b>
+                  <ul class="deck-layout-066" >
+                    <li>Phase 1 does not exist in the model </li>
+                    <li>Requires to add agent pre-evactuation activities </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="deck-layout-067 fragment" data-fragment-index="0">→</div>
+          <div class="deck-layout-068 card fragment" data-fragment-index="0">
+            <h3 class="deck-layout-069">Alert triggers</h3>
+            <div class="deck-layout-070 alert">10 to 20 min</div>
+            <div class="deck-layout-018">Phase 1 player actions becomes alert-system parametrization, as in <a data-cite="CarlesEtAl2025" href="https://hal.science/hal-04794796v1">Carles et al. (2025)</a></div>
+          </div>
+          <div class="deck-layout-067 fragment" data-fragment-index="1">→</div>
+          <div class="deck-layout-057 card fragment" data-fragment-index="1">
+            <h3 class="deck-layout-061">Phase 2 · evacuation</h3>
+            <div class="deck-layout-062 small">Players respond to emerging signals from evacuation, e.g. route congestion</div>
+            <div class="deck-layout-063">
+              <div class="deck-layout-064">
+              <div class="deck-layout-065">
+                <b>ABM Simulation</b>
+                <ul class="deck-layout-066" >
+                    <li>Phase 2 correspond to former simulation start</li>
+                    <li>Agents are alerted, prepare and move like in <a data-cite="CarlesEtAl2025" href="https://hal.science/hal-04794796v1">Carles et al. (2025)</a></li>
+                    <li>Requires <i>more realistic</i> behaviour, e.g. agents jumpin groups and leave, pathfinding randomness</li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="gameplay-cycles">
+        <h2 class="deck-layout-029">The gameplay loops define the repeated actions of players at various level</h2>
+        <div class="deck-layout-071">
+          <div class="deck-layout-072">
+            <svg class="deck-layout-073" viewBox="0 0 360 360" role="img" aria-label="Concentric arrows trace the micro, meso, and macro gameplay cycles">
+              <g class="fragment fade-in" data-fragment-index="1" color="#4A8B70">
+                <circle cx="180" cy="180" r="152" fill="none" stroke="currentColor" stroke-width="5" opacity=".5"/>
+                <path class="deck-layout-074 cycle-arrow" d="M166 19 L190 28 L166 37 Z" fill="currentColor"/>
+              </g>
+              <g class="fragment fade-in" data-fragment-index="0" color="#C87A2E">
+                <circle cx="180" cy="180" r="106" fill="none" stroke="currentColor" stroke-width="5" opacity=".5"/>
+                <path class="deck-layout-075 cycle-arrow" d="M166 65 L190 74 L166 83 Z" fill="currentColor"/>
+              </g>
+              <g color="#4A6FA5">
+                <circle cx="180" cy="180" r="60" fill="none" stroke="currentColor" stroke-width="5" opacity=".5"/>
+                <path class="deck-layout-076 cycle-arrow" d="M166 111 L190 120 L166 129 Z" fill="currentColor"/>
+              </g>
+            </svg>
+          </div>
+          <div class="deck-layout-077">
+            <div class="deck-layout-078 card">
+              <div class="deck-layout-079">Micro cycle</div>
+              <div class="deck-layout-018">Observe, move and look for risk related signs</div>
+            </div>
+            <div class="deck-layout-080 card fragment fade-in" data-fragment-index="0">
+              <div class="deck-layout-081">Meso cycle</div>
+              <div class="deck-layout-018">Find, share, and validate information together</div>
+            </div>
+            <div class="deck-layout-082 card fragment fade-in" data-fragment-index="1">
+              <div class="deck-layout-083">Macro cycle</div>
+              <div class="deck-layout-018">Get as many people as possible to safety before the tsunami arrives: final players objectif</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="deck-layout-084">Three roles players can endorse in the game</h2>
+        <div class="deck-layout-085">
+          <div class="deck-layout-086 card fragment" data-fragment-index="0">
+            <h3 class="deck-layout-087">The Network</h3>
+            <a href="assets/img/micromacro.jpg"><img class="deck-layout-088" src="assets/img/micromacro.jpg" alt="Players inspecting information cards together"></a>
+            <div class="deck-layout-089 small">Players around a table<br>Relevant and confusing information cards</div>
+          </div>
+          <div class="deck-layout-090 card fragment" data-fragment-index="1">
+            <h3 class="deck-layout-091">The Post</h3>
+            <a href="assets/img/Dispatch_TsunamiVR.jpeg"><img class="deck-layout-088" src="assets/img/Dispatch_TsunamiVR.jpeg" alt="GAMA-adapted dispatch interface"></a>
+            <div class="deck-layout-089 small">Players inspect the GAMA interface<br>Where did the issue arise?</div>
+          </div>
+          <div class="deck-layout-092 card fragment" data-fragment-index="2">
+            <h3 class="deck-layout-093">The Field</h3>
+            <a href="assets/img/GameCapture.png"><img class="deck-layout-088" src="assets/img/GameCapture.png" alt="Player's view in the VR environment"></a>
+            <div class="deck-layout-089 small">Headset player searches<br>Where the Post points</div>
+          </div>
+        </div>
+        <div class="deck-layout-094 fragment" data-fragment-index="3">
+          <b>No one can solve the puzzle alone: cooperation, trust and sharing determine simulation outcomes</b>
+        </div>
+      </section>
+
+      <section id="meso-cycle">
+        <h2 class="deck-layout-029">A meso cycle: from signal to consequence</h2>
+        <div class="cycle-phase-i">
+          <div class="cycle-caption">Before evacuation · signs can be scripted</div>
+          <div class="cycle-grid">
+            <div class="deck-layout-095 cycle-step post fragment fade-in" data-fragment-index="0"><strong>1 · POST</strong>Signal appears</div>
+            <span class="deck-layout-096 cycle-link fragment fade-in" data-fragment-index="1" aria-hidden="true">→</span>
+            <div class="deck-layout-097 cycle-step network fragment fade-in" data-fragment-index="1"><strong>2 · NETWORK</strong>Match cards</div>
+            <span class="deck-layout-098 cycle-link fragment fade-in" data-fragment-index="2" aria-hidden="true">→</span>
+            <div class="deck-layout-099 cycle-step post fragment fade-in" data-fragment-index="2"><strong>3 · POST</strong>Prioritize and send</div>
+            <span class="deck-layout-100 cycle-link fragment fade-in" data-fragment-index="3" aria-hidden="true">↓</span>
+            <div class="deck-layout-101 cycle-step field fragment fade-in" data-fragment-index="3"><strong>4 · FIELD</strong>Search and photograph</div>
+            <span class="deck-layout-102 cycle-link fragment fade-in" data-fragment-index="4" aria-hidden="true">←</span>
+            <div class="deck-layout-103 cycle-step post fragment fade-in" data-fragment-index="4"><strong>5 · POST</strong>Validate together</div>
+            <span class="deck-layout-104 cycle-link fragment fade-in" data-fragment-index="5" aria-hidden="true">←</span>
+            <div class="deck-layout-105 cycle-step fragment fade-in" data-fragment-index="5"><strong>6 · GAMA</strong>Evacuation effect</div>
+          </div>
+        </div>
+        <div class="cycle-phase-ii">
+          <div class="cycle-caption">Phase II · the signal emerges from the simulation</div>
+          <div class="cycle-grid">
+            <div class="deck-layout-095 cycle-step post fragment fade-in" data-fragment-index="6"><strong>1 · POST</strong>Once the ABM starts, signals are no longer fully scripted</div>
+            <span class="deck-layout-096 cycle-link fragment fade-in" data-fragment-index="7" aria-hidden="true">→</span>
+            <div class="deck-layout-097 cycle-step network fragment fade-in" data-fragment-index="7"><strong>2 · NETWORK</strong>What does the Network know, and what should it share?</div>
+            <span class="deck-layout-098 cycle-link fragment fade-in" data-fragment-index="8" aria-hidden="true">→</span>
+            <div class="deck-layout-099 cycle-step post fragment fade-in" data-fragment-index="8"><strong>3 · POST</strong>What should the Post prioritize and send?</div>
+            <span class="deck-layout-100 cycle-link fragment fade-in" data-fragment-index="9" aria-hidden="true">↓</span>
+            <div class="deck-layout-101 cycle-step field fragment fade-in" data-fragment-index="9"><strong>4 · FIELD</strong>Which picture and which card support the collective decision?</div>
+            <span class="deck-layout-102 cycle-link fragment fade-in" data-fragment-index="10" aria-hidden="true">←</span>
+            <div class="deck-layout-103 cycle-step post fragment fade-in" data-fragment-index="10"><strong>5 · POST</strong>How do players validate the shared evidence?</div>
+            <span class="deck-layout-104 cycle-link fragment fade-in" data-fragment-index="11" aria-hidden="true">←</span>
+            <div class="deck-layout-105 cycle-step fragment fade-in" data-fragment-index="11"><strong>6 · GAMA</strong>How does the decision affect evacuation?</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="future-work">
+        <h2 class="deck-layout-029">The next steps priorities / remains to be done!</h2>
+        <div class="future-layout">
+          <div>
+            <div class="deck-layout-106 card fragment fade-in" data-fragment-index="0">
+              <h3>THE GAME</h3>
+              <ol>
+                <li>Complete a vertical slice, e.g. currently network role is purely theoretical</li>
+                <li class="fragment fade-in" data-fragment-index="1">Identify all micro / meso cycles and complete the variation matrix</li>
+              </ol>
+            </div>
+            <div class="deck-layout-107 card fragment fade-in" data-fragment-index="2">
+              <h3>GAMA MODEL</h3>
+              <ol start="3">
+                <li>Rework the Post interface for gameplay</li>
+                <li>Align simulation scheduling with both game phases</li>
+                <li>Add realistic social evacuation and pre-evacuation behaviour</li>
+                <li>Maintain the GAMA, SIMPLE and Unity workflow</li>
+              </ol>
+            </div>
+          </div>
+          <div class="future-visuals">
+            <a class="fragment current-visible" data-fragment-index="0" data-expand-image href="assets/img/GameSynth.png" target="_blank" rel="noopener"><img src="assets/img/GameSynth.png" alt="Player collaboration and game synthesis"></a>
+            <a class="fragment current-visible" data-fragment-index="1" data-expand-image href="assets/img/VarMat.png" target="_blank" rel="noopener"><img src="assets/img/VarMat.png" alt="Variation matrix"></a>
+            <div class="interface-pair fragment fade-in" data-fragment-index="2">
+              <a data-expand-image href="assets/img/VRGamaGUI.png" target="_blank" rel="noopener"><img src="assets/img/VRGamaGUI.png" alt="GAMA interface in the VR workflow"></a>
+              <a data-expand-image href="assets/img/Dispatch_TsunamiVR.jpeg" target="_blank" rel="noopener"><img src="assets/img/Dispatch_TsunamiVR.jpeg" alt="Tsunami VR dispatch interface"></a>
+            </div>
+          </div>
+        </div>
+      </section>
+</section>
+
+      <section class="has-slide-footer">
+        <div class="slide-frame">
+          <div class="slide-content">
+            <h2 class="deck-layout-108">¿Discussion?</h2>
+            <video class="deck-layout-109" autoplay controls muted preload="metadata" 
+                  src="https://raw.githubusercontent.com/ojemaje/tsunami-evacuation-vr-platform/main/media/Teaser_Alerte_Tsunami.mp4">
+              Your browser does not support the video element
+            </video>
+            <div class="deck-layout-110">
+              <a href="mailto:kevin.chapuis@ird.fr">kevin.chapuis@ird.fr</a> · <a href="https://github.com/chapuisk" target="_blank" rel="noopener">@chapuisk</a> · <a href="https://github.com/samueltauil/copilotception" target="_blank" rel="noopener">project repository</a>
+            </div>
+          </div>
+          <footer class="slide-footer">
+            <a href="assets/img/logo/GD26Logo.png"><img class="deck-layout-003" src="assets/img/logo/GD26Logo.png" alt="GAMA Days 2026"></a>
+            <i>From simulation to situated experience: coupling GAMA and unity for immersive tsunami risk awareness in Mayotte - Corrigou et al., 2026</i>
+          </footer>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <dialog id="image-viewer" aria-label="Enlarged image">
+    <img alt="">
+    <button type="button" aria-label="Close enlarged image">Close</button>
+  </dialog>
+  <script src="assets/js/image-viewer.js"></script>
+  <script src="assets/vendor/reveal.js/dist/reveal.js"></script>
+  <script src="assets/vendor/reveal.js/plugin/notes/notes.js"></script>
+  <script src="assets/vendor/reveal.js/plugin/highlight/highlight.js"></script>
+  <script src="assets/vendor/reveal.js/plugin/markdown/markdown.js"></script>
+
+  <script src="assets/js/reveal-init.js"></script>
+</body>
+</html>
