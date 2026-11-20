@@ -10,6 +10,7 @@ My [reveal.js](https://revealjs.com/) slide presentations, published with GitHub
 | Presentation | Date | Slides |
 |--------------|------|--------|
 | RiskReunion | 17/11/26 | [View slides](https://chapuisk.github.io/Presentations/SEASOI_171126/) |
+| VRTsunami | 24/11/26 | [View slides](https://chapuisk.github.io/Presentations/GAMADAYS_241126/)|
 
 ## Credits
 
