@@ -2,7 +2,10 @@
 
 My [reveal.js](https://revealjs.com/) slide presentations, published with GitHub Pages.
 
-**Browse the presentations:** https://chapuisk.github.io/Presentations/
+<!-- 
+TODO: build a static entry point that looks like a personal sites, with a presentation list page
+**Browse the presentations:** https://chapuisk.github.io/Presentations/ 
+-->
 
 ## Presentation list
 
