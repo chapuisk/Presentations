@@ -28,7 +28,7 @@ This repository is dual-licensed: the presentation content is licensed under **C
 
 ### 1. Slide Content License (CC BY 4.0)
 
-Copyright (c) 2026 Kévin Chapuis
+Copyright (c) 2026 Kevin Chapuis
 
 All presentation content in this repository—including text, slides, diagrams, charts, and original images—is licensed under the **Creative Commons Attribution 4.0 International License (CC BY 4.0)**.
 
@@ -47,7 +47,7 @@ Full legal text: https://creativecommons.org
 
 ## 2. Source Code License (MIT)
 
-Copyright (c) 2026 [Your Name] (Presentation content and custom code)
+Copyright (c) 2026 Kévin Chapuis (custom code)
 Copyright (c) 2011-2026 Hakim El Hattab, http://hakim.se (reveal.js framework)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
