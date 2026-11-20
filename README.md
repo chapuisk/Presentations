@@ -17,7 +17,7 @@ TODO: build a static entry point that looks like a personal sites, with a presen
 
 ## Credits
 
-The presentations are based on the [dtslide](https://github.com/Data-Wise/dtslides) template and use **reveal.js**.
+This presentation is built with [reveal.js](https://revealjs.com) by [Hakim El Hattab](https://github.com) and [dtslide](https://github.com/Data-Wise/dtslides) template.
 GitHub Copilot helped me build the decks; **all slide content is authored by me**.
 
 ## Licensing
@@ -47,9 +47,8 @@ Full legal text: https://creativecommons.org
 
 ## 2. Source Code License (MIT)
 
-Copyright (c) 2026 Kévin Chapuis
-
-All software and code in this repository—including HTML, CSS, JavaScript, build scripts, and presentation templates—is licensed under the **MIT License**.
+Copyright (c) 2026 [Your Name] (Presentation content and custom code)
+Copyright (c) 2011-2026 Hakim El Hattab, http://hakim.se (reveal.js framework)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
