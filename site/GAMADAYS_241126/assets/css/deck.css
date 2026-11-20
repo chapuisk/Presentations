@@ -965,8 +965,8 @@ body {
 .deck-layout-072:not(#deck-inline):not(#deck-layout) { flex:0.9;min-width:0; }
 .deck-layout-073:not(#deck-inline):not(#deck-layout) { width:360px;max-width:100%;height:auto;display:block;margin:0 auto; }
 .deck-layout-074:not(#deck-inline):not(#deck-layout) { --cycle-duration:12s;--cycle-repeat:1; }
-.deck-layout-075:not(#deck-inline):not(#deck-layout) { --cycle-duration:6s; }
-.deck-layout-076:not(#deck-inline):not(#deck-layout) { --cycle-duration:2s; }
+.deck-layout-075:not(#deck-inline):not(#deck-layout) { --cycle-duration:6s;--cycle-repeat:2; }
+.deck-layout-076:not(#deck-inline):not(#deck-layout) { --cycle-duration:2s;--cycle-repeat:6; }
 .deck-layout-077:not(#deck-inline):not(#deck-layout) { flex:1;min-width:0; }
 .deck-layout-078:not(#deck-inline):not(#deck-layout) { border:2px solid #D6DCE5;border-top:7px solid #4A6FA5;border-radius:8px;padding:8px;background:#F8FAFC;margin-bottom:8px; }
 .deck-layout-079:not(#deck-inline):not(#deck-layout) { font-size:28px;color:#4A6FA5;font-weight:bold; }
